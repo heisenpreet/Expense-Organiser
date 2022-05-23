@@ -9,13 +9,23 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "autoprefixer": "^10.4.4",
+    "concat": "^1.0.3",
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^9.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "git:pull": "git pull",
+    "git:add": "git add .",
+    "git:commit": "git commit -m \"v2\" ",
+    "git:push": "git push",
+    "git:deploy": "npm-run-all git:pull git:add git:commit git:push"
   },
   "eslintConfig": {
     "extends": [
