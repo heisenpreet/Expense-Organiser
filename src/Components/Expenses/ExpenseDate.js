@@ -1,7 +1,7 @@
 import "./CSS/ExpenseDate.css";
 
 ///////////////////////
-export default function (props) {
+const ExpenseDate = (props) => {
   return (
     <div className="expense-date">
       <div className="expense-date__month">{props.date.split(" ")[0]}</div>
@@ -11,4 +11,5 @@ export default function (props) {
       </div>
     </div>
   );
-}
+};
+export default ExpenseDate;

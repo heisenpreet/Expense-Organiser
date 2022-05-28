@@ -18,6 +18,12 @@ class State {
       date: this.getCurrentDate(new Date(2022, 3, 2)),
       amount: 135.4,
     },
+    {
+      id: "e5",
+      title: "Baking Soda",
+      date: this.getCurrentDate(new Date(2019, 3, 2)),
+      amount: 135.4,
+    },
   ];
 
   getCurrentDate(date) {
