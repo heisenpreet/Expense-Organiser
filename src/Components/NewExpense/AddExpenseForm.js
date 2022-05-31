@@ -39,11 +39,12 @@ const AddExpenseForm = (props) => {
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label>Title</label>
-          <input type="text" onChange={titleChangeHandler} />
+          <input required type="text" onChange={titleChangeHandler} />
         </div>
         <div className="new-expense__control">
           <label>Amount</label>
           <input
+            required
             type="number"
             min="0.01"
             step={"0.01"}
@@ -53,6 +54,7 @@ const AddExpenseForm = (props) => {
         <div className="new-expense__control">
           <label>Date</label>
           <input
+            required
             type="date"
             min={"2019 - 01 - 01"}
             max={new Date()}
@@ -62,6 +64,7 @@ const AddExpenseForm = (props) => {
       </div>
       <div className="new-expense__actions">
         <button type="submit">Add Expense</button>
+        <button onClick={props.onCancel}>Cancel</button>
       </div>
     </form>
   );
